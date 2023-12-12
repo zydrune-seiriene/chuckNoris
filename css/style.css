@@ -1,0 +1,46 @@
+.joke-text {
+    text-shadow: 0px 0px 1px white;
+    font-weight: bold;
+}
+
+#jokes-container {
+    display: grid;
+    gap: 30px;
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    min-height: 70vh;
+}
+
+#jokes-container>article {
+    align-self: stretch;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+#jokes-container>article>p {
+    word-break: break-all;
+    text-align: center;
+    color: black;
+}
+
+@media (min-width: 576px) {
+
+    #jokes-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 800px) {
+
+    #jokes-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    #jokes-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
